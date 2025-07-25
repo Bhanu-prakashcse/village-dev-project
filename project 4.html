@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand img {
+            max-height: 100px;
+            border-radius: 50%;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .dropdown-menu a {
+            color: black !important;
+        }
+        .dropdown-menu {
+            display: none; /* Hide dropdown initially */
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block; /* Show dropdown on hover */
+        }
+        .content {
+            padding: 20px;
+        }
+        .project-heading {
+            text-align: center;
+            margin-top: 20px;
+            background: linear-gradient(to right, #007bff, #00bfff); /* Matching the heading background color */
+            color: white; /* Matching the heading text color */
+            padding: 20px; /* Consistent padding */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+        .project-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+        .project-photo img:hover {
+            transform: scale(1.05);
+        }
+        .project-description {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        footer {
+            background: #343a40;
+            color: #007BFF;
+            padding: 40px 20px;
+            border-top: 4px solid #007bff;
+            margin-top: 30px;
+        }
+        footer p b {
+            color: #007BFF;
+        }
+        footer {
+            background: black;
+            color: white;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #007BFF;
+        }
+        footer h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            color:#007BFF
+        }
+        footer ul li {
+            margin-bottom: 100px;
+            display: flex;
+            color:#007BFF;
+            align-items: center;
+        }
+        footer ul li i {
+            margin-right: 10px;
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+        footer ul li a:hover i {
+            color: #007BFF;
+        }
+        footer .social-icons a {
+            color: #007BFF;
+            margin-right: 100px;
+            font-size: 240px;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #007BFF;
+        }
+        footer .center {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 20px;
+            color:#007BFF;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+        }
+        
+        .social-icons a {
+            color: #007bff;
+            font-size: 1.5em;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .center {
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-links .col-md-4 {
+            margin-bottom: 20px;
+        }
+        .donate-btn {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .donate-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="rd.jpg" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Objectives.html">Objectives</a>
+                        <a class="dropdown-item" href="message.html">Message from our President</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProjects" role="button" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownProjects">
+                        <a class="dropdown-item" href="project 1.html">Dairy Project</a>
+                        <a class="dropdown-item" href="project 2.html">Self-Development of Poor women through Tailoring</a>
+                        <a class="dropdown-item" href="project 3.html">Drinking Water project</a>
+                        <a class="dropdown-item" href="project 4.html">COVID- 19 Emergency Relief</a>
+                        <a class="dropdown-item" href="project 5.html">DRILLINNG OF BORE WELLS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Support.html">Support Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn donate-btn" href="Support.html">Donate Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Project 4 Content -->
+    <div class="container content">
+        <div class="project-heading">
+            <h1>COVID- 19 Emergency Relief</h1>
+        </div>
+        <div class="row mt-4">
+            <!-- Photo on the Left -->
+            <div class="col-md-6 project-photo">
+                <img src="rs=w_740,cg_true,m (1).jpg" alt="COVID-19 Emergency Relief Photo Left">
+            </div>
+            <!-- Text on the Right -->
+            <div class="col-md-6">
+                <div class="project-description">
+                    <p>V.D.S Team distributed the food essential commodities viz., Rice, Wheat Flour, Cooking Oil, Sugar, Salt, Dhal, Dry coconut, Tamarind, Chili Powder, Vegetables, Fruits and Hygiene items viz., Masks, Soaps and Hand washing Liquids, to 750 poor households at 50 villages of Nellore District, Andhra Pradesh State. The distributed commodities feed these households for up to one month during the lockdown period. In addition to the food items distribution, V.D.S Team conducted awareness to the village people on how to effectively prevent the Corona virus. The Health Worker organized Awareness Creation among the People Regarding the Safe Practices for Avoiding Corona virus Infection.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- Text on the Left -->
+            <div class="col-md-6">
+                <div class="project-description">
+                    <p>The meeting aim is to educate individuals on health concerns, social issues, environmental challenges, or organizational policies. The objective is to provide valuable information, encourage thoughtful discussion, and inspire action. By presenting facts, statistics, personal stories, and expert insights, organizers aim to enlighten the audience, leading to better decision-making, more informed opinions, and proactive behavior. They often include Q&A sessions, group discussions, or interactive activities to engage participants and foster dialogue. Awareness Meetings offer several benefits, such as raising consciousness about overlooked or misunderstood subjects, encouraging proactive behavior, and fostering a well-informed community.</p>
+                </div>
+            </div>
+            <!-- Photo on the Right -->
+            <div class="col-md-6 project-photo">
+                <img src="rg4.jpg" alt="Awareness Meeting">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Quick Links</h2>
+                        <a href="index.html"><i class="fas fa-home"></i> Home</a><br>
+                        <a href="Objectives.html"><i class="fas fa-bullseye"></i> Objectives</a><br>
+                        <a href="message.html"><i class="fas fa-envelope"></i> Message from Founder</a><br>
+                        <a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a><br>
+                        <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a><br>
+                        <a href="Support.html"><i class="fas fa-hands-helping"></i> Support Us</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Projects</h2>
+                    <a href="project 1.html"><i class="fas fa-project-diagram"></i> Dairy Project</a><br>
+                    <a href="project 2.html"><i class="fas fa-project-diagram"></i> Self-Development of Poor women through Tailoring</a><br>
+                    <a href="project 3.html"><i class="fas fa-project-diagram"></i> Drinking Water project</a><br>
+                    <a href="project 4.html"><i class="fas fa-project-diagram"></i> COVID- 19 Emergency Relief</a><br>
+                    <a href="project 5.html"><i class="fas fa-project-diagram"></i> DRILLING OF BORE WELLS</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Contact Us</h2>
+                    <p><b>Phone Number:</b>+91 79811 16449, 9441807234</p>
+                    <p><b>Address:</b> Mangupalli(Vill & Post),Ananthasagaram(mandal),Nellore(District), Andhra Pradesh, India.524302</p>
+                    <li>Social Media Links: 
+                        <a href="https://youtube.com/@kaluvasreehari2232?si=oGl4J7QApGFvzBJt" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/srihari-kaluva-5a8517189/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+    
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <p>&copy; VDS NGO INDIA - ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <
