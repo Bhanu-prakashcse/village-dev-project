@@ -1,0 +1,6 @@
+# Example to ignore all .jpg and .png files
+*.jpg
+*.png
+
+# Or ignore a folder
+/images/
