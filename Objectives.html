@@ -9,15 +9,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f5f5dc;
         }
         /* Navigation bar */
         .navbar {
             margin-bottom: 20px;
         }
         .navbar-brand img {
-            max-height: 100px;
-            border-radius: 50%;
+            max-height: 200px;       /* Limit the height */
+            width: 200px;            /* Set width to make it a square */
+            object-fit: cover;       /* Ensure it fills the circle */
+            border-radius: 50%;      /* Make it circular */
+            border: 2px solid white; /* Optional: Add a border for style */
         }
         .navbar-nav .nav-item .nav-link {
             color: white !important;
@@ -59,11 +62,16 @@
             background: black;
             color: white;
             padding: 40px 0;
-            margin-top: 40px;
+            margin-top: 10px;
+            width: 100%;
         }
-        footer p b {
-            color: #007BFF;
+
+        footer h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
+
         footer a {
             color: white;
             text-decoration: none;
@@ -71,11 +79,6 @@
         }
         footer a:hover {
             color: #007BFF;
-        }
-        footer h2 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
         }
         footer ul {
             list-style-type: none;
@@ -89,7 +92,6 @@
         footer ul li i {
             margin-right: 10px;
             color: #007BFF;
-            transition: color 0.3s;
         }
         footer ul li a:hover i {
             color: white;
@@ -104,12 +106,9 @@
             color: #007BFF;
         }
         footer .center {
-            text-align: center;
-            margin-top: 20px;
             font-size: 14px;
-            border-top: 1px solid #444;
-            padding-top: 10px;
         }
+
     </style>
 </head>
 <body>
@@ -164,8 +163,9 @@
         </ul>
     </div>
 
-    <!-- Footer Section -->
-    <footer class="container mt-4">
+   <!-- Footer Section -->
+<footer style="background: #333; color: white; margin-top: 10px; padding: 40px 0;">
+    <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <h2>Quick Links</h2>
@@ -182,27 +182,30 @@
                 <h2>Projects</h2>
                 <ul>
                     <li><a href="project 1.html"><i class="fas fa-project-diagram"></i> Dairy Project</a></li>
-                    <li><a href="project 2.html"><i class="fas fa-project-diagram"></i> Self-Development of Poor women through Tailoring</a></li>
-                    <li><a href="project 3.html"><i class="fas fa-project-diagram"></i> Drinking Water project</a></li>
-                    <li><a href="project 4.html"><i class="fas fa-project-diagram"></i> COVID- 19 Emergency Relief</a></li>
-                    <li><a href="project 5.html"><i class="fas fa-project-diagram"></i> DRILLING OF BORE WELLS</a></li>
+                    <li><a href="project 2.html"><i class="fas fa-project-diagram"></i> Women Tailoring Project</a></li>
+                    <li><a href="project 3.html"><i class="fas fa-project-diagram"></i> Drinking Water Project</a></li>
+                    <li><a href="project 4.html"><i class="fas fa-project-diagram"></i> COVID-19 Emergency Relief</a></li>
+                    <li><a href="project 5.html"><i class="fas fa-project-diagram"></i> Drilling Bore Wells</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <h2>Contact Us</h2>
                 <p><b>Phone Number:</b> +91 79811 16449, 9441807234</p>
                 <p><b>Address:</b> Mangupalli(Vill & Post), Ananthasagaram(mandal), Nellore(District), Andhra Pradesh, India. 524302</p>
-                <p><b>Social Media Links:</b></p>
+                <p><b>Social Media:</b></p>
                 <div class="social-icons">
                     <a href="https://youtube.com/@kaluvasreehari2232?si=oGl4J7QApGFvzBJt" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.linkedin.com/in/srihari-kaluva-5a8517189/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/srihari-kaluva-5a8517189/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-        <div class="center">
+
+        <div class="center text-center mt-4 pt-3 border-top">
             <p>&copy; VDS NGO INDIA - ALL RIGHTS RESERVED</p>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
